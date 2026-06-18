@@ -52,6 +52,23 @@ app.delete("/transacciones/:id", (req, res) => {
     res.json({ message: "Transacción eliminada" });
 });
 
+// Put /transacciones/:id - editar por id
+app.put("/transacciones/:id", (req, res) => {
+    const { fecha, descripcion, categoria, tipo, monto, metodo, aDeQuien, notas} = req.body;
+    const id = parseInt(req.params.id);
+    const index = transacciones.findIndex(t => t.id === id);
+    transacciones[index].fecha = fecha;
+    transacciones[index].descripcion = descripcion;
+    transacciones[index].categoria = categoria;
+    transacciones[index].tipo = tipo;
+    transacciones[index].monto = monto;
+    transacciones[index].metodo = metodo;
+    transacciones[index].aDeQuien = aDeQuien;
+    transacciones[index].notas = notas;
+
+    res.json(transacciones[index])
+})
+
 app.listen(PORT, () => {
     console.log(`Servidor corriendo http://localhost:${PORT}`);
 });
