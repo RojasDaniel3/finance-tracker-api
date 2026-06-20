@@ -69,6 +69,16 @@ app.put("/transacciones/:id", (req, res) => {
     res.json(transacciones[index])
 })
 
+
+// Get /transacciones/:id traer informacion por id
+
+app.get("/transacciones/:id", (req, res) => {
+    const id  = parseInt(req.params.id);
+    const index = transacciones.findIndex(t => t.id === id);
+    res.json(transacciones[index]);
+})
+
+
 app.listen(PORT, () => {
     console.log(`Servidor corriendo http://localhost:${PORT}`);
 });
