@@ -1,0 +1,110 @@
+[
+   {
+      "id": 1,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 2ª quincena",
+      "tipo": "INGRESO",
+      "monto": 175000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 2,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 1ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 1,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 3ª quincena",
+      "tipo": "INGRESO",
+      "monto": 235000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 2,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 3,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 4,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 5,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 6,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 7,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 8,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 9,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 10,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 135000,
+      "metodo": "Cuenta bancaria"
+   }
+]
