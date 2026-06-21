@@ -106,5 +106,23 @@
       "tipo": "INGRESO",
       "monto": 135000,
       "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 11,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": -50,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 12,
+      "fecha": "2026-06-18",
+      "descripcion": "Pago nomina",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": "cien",
+      "metodo": "Cuenta bancaria"
    }
 ]

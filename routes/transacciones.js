@@ -13,7 +13,12 @@ const router = express.Router();
 
         if (!TIPO_VALIDOS.includes(tipo)) {
             return res.status(400).json({ error: "Tipo no valido", tiposPermitidos: TIPO_VALIDOS });
-    }
+        }
+        
+        if (typeof monto !== "number" || monto <= 0){
+            return res.status(400).json({error: "No es numero o es menor que cero"})
+        }
+    
 
 
         const nuevaTransaccion = {
