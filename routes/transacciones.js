@@ -1,4 +1,6 @@
 const express = require("express");
+const { transacciones, obtenerSiguienteId, TIPO_VALIDOS, guardarTransacciones } = require('../data/transaccionesData');
+const {validarTransacciones} = require("../validations/validaciones")
 const router = express.Router();
 
 
@@ -10,22 +12,11 @@ const router = express.Router();
     //Post /transacciones - agregar nueva
     router.post("/transacciones", (req, res) => {
         const { fecha, descripcion, categoria, tipo, monto, metodo, aDeQuien, notas} = req.body;
-
-        if (!TIPO_VALIDOS.includes(tipo)) {
-            return res.status(400).json({ error: "Tipo no valido", tiposPermitidos: TIPO_VALIDOS });
+        const resultado =validarTransacciones(req.body);
+        if (!resultado.valido) {
+        return res.status(400).json({ error: resultado.error });
         }
         
-        if (typeof monto !== "number" || monto <= 0){
-            return res.status(400).json({error: "No es numero o es menor que cero."})
-        }
-    
-        if (!descripcion){
-            return res.status(400).json({error: "No puede estar vacia."})
-        }
-
-        if (!fecha){
-            return res.status(400).json({error: "No puede estar vacio la fecha."})
-        }
 
         const nuevaTransaccion = {
             id: obtenerSiguienteId(),
@@ -79,4 +70,3 @@ const router = express.Router();
     })
 
 module.exports = router
-const { transacciones, obtenerSiguienteId, TIPO_VALIDOS, guardarTransacciones } = require('../data/transaccionesData');

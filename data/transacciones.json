@@ -124,5 +124,32 @@
       "tipo": "INGRESO",
       "monto": "cien",
       "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 13,
+      "fecha": "",
+      "descripcion": "Pago",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 5000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 14,
+      "fecha": "",
+      "descripcion": "Pago",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 5000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 15,
+      "fecha": "",
+      "descripcion": "Pago",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 5000,
+      "metodo": "Cuenta bancaria"
    }
 ]
