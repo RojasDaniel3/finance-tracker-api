@@ -16,10 +16,16 @@ const router = express.Router();
         }
         
         if (typeof monto !== "number" || monto <= 0){
-            return res.status(400).json({error: "No es numero o es menor que cero"})
+            return res.status(400).json({error: "No es numero o es menor que cero."})
         }
     
+        if (!descripcion){
+            return res.status(400).json({error: "No puede estar vacia."})
+        }
 
+        if (!fecha){
+            return res.status(400).json({error: "No puede estar vacio la fecha."})
+        }
 
         const nuevaTransaccion = {
             id: obtenerSiguienteId(),
