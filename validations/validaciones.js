@@ -1,6 +1,6 @@
 const {TIPO_VALIDOS} = require("../data/transaccionesData.js")
 function validarTransacciones(datos){
-            const {fecha, descripcion, tipo, monto} = datos;
+            const {fecha, descripcion, tipo, monto, aDeQuien} = datos;
             
             if (!TIPO_VALIDOS.includes(tipo)) {
                 return {valido: false, error: "Tipo no valido", tiposPermitidos: TIPO_VALIDOS };
@@ -17,7 +17,15 @@ function validarTransacciones(datos){
             if (!fecha){
                 return {valido: false, error: "No puede estar vacio la fecha."};
             }
+            const TIPO_PRESTAMOS_VALIDOS = ["PRÉSTAMO DADO", "PRÉSTAMO RECIBIDO", "COBRO RECUPERADO"];
+            if (TIPO_PRESTAMOS_VALIDOS.includes(tipo)){ 
+                if (!aDeQuien){
+                return {valido:false, error: "Necesito saber nombre de la persona del prestamo"}
+                }
+            }
+
             return {valido: true};
         }
+
 
 module.exports = {validarTransacciones}

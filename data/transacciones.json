@@ -151,5 +151,24 @@
       "tipo": "INGRESO",
       "monto": 5000,
       "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 16,
+      "fecha": "2026-06-24",
+      "descripcion": "Pago",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "INGRESO",
+      "monto": 50000,
+      "metodo": "Cuenta bancaria"
+   },
+   {
+      "id": 17,
+      "fecha": "2026-06-24",
+      "descripcion": "Pago",
+      "categoria": "Nómina 4ª quincena",
+      "tipo": "PRÉSTAMO DADO",
+      "monto": 50000,
+      "metodo": "Cuenta bancaria",
+      "aDeQuien": "Carlos"
    }
 ]
