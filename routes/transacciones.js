@@ -46,6 +46,10 @@ const router = express.Router();
     // Put /transacciones/:id - editar por id
     router.put("/transacciones/:id", (req, res) => {
         const { fecha, descripcion, categoria, tipo, monto, metodo, aDeQuien, notas} = req.body;
+                const resultado =validarTransacciones(req.body);
+        if (!resultado.valido) {
+        return res.status(400).json({ error: resultado.error });
+        }
         const id = parseInt(req.params.id);
         const index = transacciones.findIndex(t => t.id === id);
         transacciones[index].fecha = fecha;
